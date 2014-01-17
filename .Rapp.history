@@ -1,0 +1,324 @@
+x<-load('/Users/keegan/Desktop/Research/Code/Rpackages/smp/data/bleaching.RData')
+x
+load('/Users/keegan/Desktop/Research/Code/Rpackages/smp/data/bleaching.RData')
+ls
+load('/Users/keegan/Desktop/Research/Code/Rpackages/smp/data/bleaching.RData')
+ls()
+bleaching_data
+library(devtools)
+install_github('smp','khines')
+??install
+install_github('smp',username='keeganhines')
+library(devtools)
+install_github('smp',username="keeganhines")
+library(smp)
+confidence()
+?confidence
+install_github('smp',username="keeganhines")
+?confidence
+library(smp)
+?confidence
+load('/Users/keegan/Desktop/Research/Code/Rpackages/smp/data/bleaching.RData')
+ls()
+save(bleaching_data,file='/Users/keegan/Desktop/Research/Code/Rpackages/smp/bleaching.rda')
+?save
+library(devtools)
+install_github('smp',username='keeganhines')
+library(smp)
+confidence(bleaching_data)
+data()
+library(devtools)
+install_github('smp',username='keeganhines')
+library(smp)
+library(devtools)
+install_github('smp',username='keeganhines')
+library(smp)
+bleaching_data
+library(devtools)
+document('/Users/keegan/Desktop/Research/Code/Rpackages/bibs/')
+dev_help('genMH')
+time<-1:300
+decay<-exp(-time/30)
+plot(time,decay)
+decay<-exp(-time/15)
+plot(time,decay)
+decay<-exp(-time/50)
+plot(time,decay)
+decay<-exp(-time/75)
+plot(time,decay)
+decay<-decay+rnorm(length(time),0,.05)
+plot(time,decay)
+decay<-exp(-time/75)+rnorm(length(time),0,.025)
+plot(time,decay)
+save(decay, file='/Users/keegan/Desktop/Research/Code/Rpackages/bibs/data/decay.rda')
+s<-decay
+rm(decay)
+decay=data.frame(signal=s,time=1:100)
+decay
+decay=data.frame(signal=s,time=1:300)
+head(decay)
+plot(decay$signal,decay$time)
+plot(decay$time,decay$signal)
+save(decay, file='/Users/keegan/Desktop/Research/Code/Rpackages/bibs/data/decay.rda')
+?load_all
+load_all('bibs')
+load_all('/Users/keegan/Desktop/Research/Code/Rpackages/bibs')
+ligandConcentration<-exp(seq(log10(1e-8),log10(1e-3),length.out=35) )
+ligandConcentration
+ligandConcentration<-exp(seq(log10(1e-8),log10(1e-1),length.out=35) )
+ligandConcentration
+ligandConcentration<-exp(seq(log(1e-8),log(1e-1),length.out=35) )
+ligandConcentration
+signal<-modelcalc('TwoSiteAdair',c(100,1000),ligandConcentration)
+plot(ligandConcentration,signal)
+plot(ligandConcentration,signal,log='x')
+signal<-modelcalc('TwoSiteAdair',c(1000,100),ligandConcentration)
+plot(ligandConcentration,signal,log='x')
+signal<-modelcalc('TwoSiteAdair',c(250,250),ligandConcentration)
+plot(ligandConcentration,signal,log='x')
+signal<-modelcalc('TwoSiteAdair',c(100,1000),ligandConcentration)
+plot(ligandConcentration,signal,log='x')
+signal<-modelcalc('TwoSiteAdair',c(1000,10000),ligandConcentration)
+plot(ligandConcentration,signal,log='x')
+binding<-data.frame(signal=signal,ligandConcentration=ligandConcentration)
+head(binding)
+signal<-modelcalc('TwoSiteAdair',c(1000,10000),ligandConcentration) + rnorm(length(ligandConcentration),0,.03)
+plot(ligandConcentration,signal,log='x')
+signal<-modelcalc('TwoSiteAdair',c(1000,10000),ligandConcentration) + rnorm(length(ligandConcentration),0,.02)
+plot(ligandConcentration,signal,log='x')
+binding<-data.frame(signal=signal,ligandConcentration=ligandConcentration)
+head(bindign)
+head(binding)
+save(binding,file='/Users/keegan/Desktop/Research/Code/Rpackages/bibs/data/binding.rda')
+methods(sum)
+methods("sum")
+methods("mean")
+mean.default
+methods(class='Date')
+data.frame
+e<-list(10)
+e
+f<-e
+f
+e[[1]]<-5
+e
+f
+e<-new.env()
+f<-e
+e
+f
+e$a<-10
+e
+str(e)
+e$a
+f$a
+e$a<-5
+f$a
+search()
+ls()
+environment(e)
+environment('e')
+y<-1
+f<-function(x) x-y
+f(5)
+environment(f)
+?match.fun
+x<-[[c(1,2)]]
+?list
+x<-list(c(1,2),c(5,5),c(10,1))
+x
+x[[1]]
+ls()
+library(smp)
+ls()
+bleaching_data
+str(bleaching_data)
+summary(bleaching_data)
+print(bleaching_data)
+head(bleaching_data)
+choices<- c(a,b,c,d)
+choices<- c('a','b','c','d')
+sample(choices,3)
+sample(choices,3,replace=TRUE)
+x<-sample(choices,3,replace=TRUE)
+x
+sort(x)
+samples<-list()
+samples
+samples<-list()#
+for(i in 1:10){#
+	samples[[i]]<- sample(choices,3,replace=TRUE)#
+}
+samples
+samples<-list()#
+for(i in 1:1000){#
+	samples[[i]]<- sort(sample(choices,3,replace=TRUE))#
+}
+unique(samples)
+table(samples)
+samples==unique(samples)[[2]]
+unique(samples)[[2]]
+samples<-c()#
+for(i in 1:1000){#
+	samples<- c(samples, sort(sample(choices,3,replace=TRUE))	)#
+}
+head(samples)
+samples<-c()#
+for(i in 1:1000){#
+	samples<- c(samples, paste(sort(sample(choices,3,replace=TRUE))	,sep=''))#
+}
+head(samples)
+sample(choices,3,replace=TRUE)
+paste(sample(choices,3,replace=TRUE),sep='')
+paste(text=sample(choices,3,replace=TRUE),sep='')
+class(sample(choices,3,replace=TRUE))
+length(sample(choices,3,replace=TRUE))
+?pate
+?paste
+paste(c(sample(choices,3,replace=TRUE)),sep='')
+paste(c('a','b'),sep='')
+paste(c('a'),c('b'),sep='')
+paste('a','b',sep='')
+sample(choices,3,replace=TRUE)
+paste(sample(choices,3,replace=TRUE))
+x<-sample(choices,3,replace=TRUE)
+x
+class(x)
+mode(x)
+paste(x)
+?paste
+paste[1:3]
+paste(1:3)
+paste(1:3,sep='')
+samples<-list()#
+for(i in 1:1000){#
+	samples[[i]]<- sort(sample(choices,3,replace=TRUE))	#
+}
+head(samples)
+samples[[1]]
+samples[[1]]==unique(samples)[[1]]
+samples[[1]]==unique(samples)[[2]]
+unique(samples)[[2]]
+paste('a','b','c',sep='')
+x
+paste(x,sep='')
+paste(list(x),sep='')
+paste(x,sep='')
+x
+t(x)
+paste(t(x),sep='')
+paste(c(x),sep='')
+paste(x[1:2],sep='')
+paste(x[1],x[2],x[3],sep='')
+samples<-c()#
+for(i in 1:1000){#
+	draw<-sort(sample(choices,3,replace=TRUE) )#
+	samples<- c(samples, paste(draw[1],draw[2],draw[3] ,sep='')	)#
+}
+head(samples)
+unique(samples)
+length(unique(samples))
+samples[1:10]=='bdd'
+table(samples)
+table(samples)/length(samples)
+samples<-c()#
+for(i in 1:10000){#
+	draw<-sort(sample(choices,3,replace=TRUE) )#
+	samples<- c(samples, paste(draw[1],draw[2],draw[3] ,sep='')	)#
+}
+table(samples)/length(samples)
+samples<-c()#
+for(i in 1:10000){#
+	draw<-sort(sample(choices,3,replace=TRUE) )#
+	samples<- c(samples, paste(draw[1],draw[2],draw[3] ,sep='')	)#
+}#
+#
+table(samples)/length(samples)
+for(i in 1:100000){#
+	draw<-sort(sample(choices,3,replace=TRUE) )#
+	samples<- c(samples, paste(draw[1],draw[2],draw[3] ,sep='')	)#
+}
+table(samples)/length(samples)
+samples<-c()#
+for(i in 1:1000){#
+	draw<-sort(sample(choices,,replace=TRUE) )#
+	samples<- c(samples, paste(draw[1],draw[2],draw[3] ,sep='')	)#
+}
+table(samples)/length(samples)
+(1/3)^3
+2*(1/3)^3
+3*(1/3)^3
+samples<-c()#
+for(i in 1:10000){#
+	draw<-sort(sample(choices,,replace=TRUE) )#
+	samples<- c(samples, paste(draw[1],draw[2],draw[3] ,sep='')	)#
+}
+table(samples)/length(samples)
+choices<- c('a','b')#
+#
+samples<-c()#
+for(i in 1:10000){#
+	draw<-sort(sample(choices,2,replace=TRUE) )#
+	samples<- c(samples, paste(draw[1],draw[2],sep='')	)#
+}
+head(samples)
+table(samples)/length(samples)
+samples<-c()#
+for(i in 1:10000){#
+	draw<-sort(sample(choices,3,replace=TRUE) )#
+	samples<- c(samples, paste(draw[1],draw[2],sep='')	)#
+}
+table(samples)/length(samples)
+sample(choices,3,replace=TRUE)
+samples<-c()#
+for(i in 1:10000){#
+	draw<-sort(sample(choices,3,replace=TRUE) )#
+	samples<- c(samples, paste(draw[1],draw[2],draw[3], sep='')	)#
+}
+table(samples)/length(samples)
+choices<- c('a','b','c')
+samples<-c()#
+for(i in 1:10000){#
+	draw<-sort(sample(choices,3,replace=TRUE) )#
+	samples<- c(samples, paste(draw[1],draw[2],draw[3], sep='')	)#
+}
+table(samples)/length(samples)
+(1/3)^3
+3*(1/3)^3
+2*(1/3)^3
+samples<-c()#
+for(i in 1:=50000){#
+	draw<-sort(sample(choices,3,replace=TRUE) )#
+	samples<- c(samples, paste(draw[1],draw[2],draw[3], sep='')	)#
+}
+samples<-c()#
+for(i in 1=50000){#
+	draw<-sort(sample(choices,3,replace=TRUE) )#
+	samples<- c(samples, paste(draw[1],draw[2],draw[3], sep='')	)#
+}
+samples<-c()#
+for(i in 1:50000){#
+	draw<-sort(sample(choices,3,replace=TRUE) )#
+	samples<- c(samples, paste(draw[1],draw[2],draw[3], sep='')	)#
+}
+table(samples)/length(samples)
+choices<- c('a','b','c', 'd')
+samples<-c()#
+for(i in 1:50000){#
+	draw<-sort(sample(choices,3,replace=TRUE) )#
+	samples<- c(samples, paste(draw[1],draw[2],draw[3], sep='')	)#
+}
+table(samples)/length(samples)
+(1/4)^3
+3*(1/4)^3
+6*(1/4)^3
+red<-readLines("http://www.reddit.com/r/Greyhounds/hot.json")
+w<-readLines("http://en.wikipedia.org/wiki/E-64")
+w
+setwd('/Users/keegan/Desktop/Research/Presentations/INS symp 2014/talk/')
+library(slidify)
+author("Hines")
+slidify('index.Rmd')
+slidify('index.Rmd')
+slidify('index.Rmd')
+slidify('index.Rmd')

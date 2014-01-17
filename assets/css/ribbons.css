@@ -1,0 +1,144 @@
+/*Github Ribbon Test*/
+/* Source: https://github.com/dciccale/css3-github-ribbon */
+/* Define classes for example, definition, problem etc. */
+/* Choose meaningful colors for background and text */
+
+.example {
+  background-color: #121621;
+  top: 1.2em;
+  right: -3.2em;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-box-shadow: 0 0 0 1px #1d212e inset,0 0 2px 1px #fff inset,0 0 1em #888;
+  -moz-box-shadow: 0 0 0 1px #1d212e inset,0 0 2px 1px #fff inset,0 0 1em #888;
+  box-shadow: 0 0 0 1px #1d212e inset,0 0 2px 1px #fff inset,0 0 1em #888;
+  color: #FF0;
+  display: block;
+  padding: .6em 3.5em;
+  position: absolute;
+  font: bold .82em sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px -1px 8px rgba(0,0,0,0.60);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.definition {
+  background-color: #a00;
+  top: 1.2em;
+  right: -3.2em;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-box-shadow: 0 0 0 1px #1d212e inset,0 0 2px 1px #fff inset,0 0 1em #888;
+  -moz-box-shadow: 0 0 0 1px #1d212e inset,0 0 2px 1px #fff inset,0 0 1em #888;
+  box-shadow: 0 0 0 1px #1d212e inset,0 0 2px 1px #fff inset,0 0 1em #888;
+  color: #FFF;
+  display: block;
+  padding: .6em 3.5em;
+  position: absolute;
+  font: bold .82em sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px -1px 8px rgba(0,0,0,0.60);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.twoPic{
+  float:left;
+}
+
+
+.videos{
+position:relative;
+width: 100%;
+height:50%;
+float: left;
+}
+
+.vid_text{
+padding:50px; 
+clear:left;
+z-index:10;
+}
+
+.container{
+  position:relative;
+  width:900px;
+  height:600px;
+}
+
+.two_block_L{
+float:left;
+width:400px;
+}
+
+.two_block_R{
+float:right;
+width:400px;
+}
+
+.small_iframe{
+ width:49%;
+ height:100%;
+}
+
+.text_block{
+  padding:25% 0;
+}
+
+.img_block{
+  padding: 10% 0;
+}
+
+#cam_studies_text{
+padding:0 0 0 50px;
+}
+
+#seq_binding_text{
+padding:30px;
+}
+
+
+#mods1_text{
+padding:10px;
+}
+
+#mods2_img{
+  padding: 1% 0;
+}
+
+#mods2_text{
+  padding:18% 0 0 0 ;
+}
+
+#str_ident_text{
+padding:40px 20px 20px 0;
+}
+
+#trans_text{
+  padding: 15%  10% 15% 10%;
+}
+
+#mcmc1_text{
+  padding: 2%  10% 2% 10%;
+}
+
+#concl_text{
+  padding: 10% 5% 10% 5%;
+}
+
+strong{
+  color:#000000;
+}
+/* in case gray doesn't show up with projector
+body p, body li{
+  color :#000000;
+}
+*/
+

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Modeling molecules</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Modeling molecules">
+  <meta name="author" content="Keegan Hines">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+    <link rel="stylesheet" href = "assets/css/ribbons.css">
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+    <!-- END LOGO SLIDE -->
+    
+
+    <!-- TITLE SLIDE -->
+    <!-- Should I move this to a Local Layout File? -->
+    <slide class="title-slide segue nobackground">
+      <hgroup class="auto-fadein">
+        <h1>Modeling molecules</h1>
+        <h2>Bayesian approaches to understanding protein biophysics</h2>
+        <p>Keegan Hines<br/>Aldrich Lab</p>
+      </hgroup>
+          </slide>
+
+    <!-- SLIDES -->
+
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Proteins</h2>
+  </hgroup>
+  <div>
+  <img src="./assets/static/proteins.png" height=400 width=1000>
+  </div>
+  <div class="vid_text">
+    <ul>
+      <li>Fundamental unit of computation and signal processing in biological systems</li>
+      <li>Fold into complex structures which determine their function </li> 
+    </ul>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Proteins</h2>
+  </hgroup>
+  <div class='videos'>
+  <iframe class='small_iframe' src= "http://www.sciencemag.org/content/suppl/2012/04/11/336.6078.229.DC1/1216533s1.mov"  ></iframe>
+  <iframe class ='small_iframe'  src= "http://www.sciencemag.org/content/suppl/2012/04/11/336.6078.229.DC1/1216533s3.mov" ></iframe> 
+  </div>
+ <div class="vid_text">
+  <ul>
+    <li> Proteins are dynamic, exploring very many conformational states.</li>
+    <li> What can we do to understand these dynamics?</li>
+  </ul>
+  </div>
+ </div>
+  <!-- Presenter Notes -->
+</slide>
+
+
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Modeling Proteins</h2>
+  </hgroup>
+  <div>
+  <img src="./assets/static/mods1.png" height=500 width=1000>
+  </div>
+  <div id="mods1_text">
+    <p>Physiological relevance-  we only need to account for some of this complexity</p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+
+
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Modeling Proteins</h2>
+  </hgroup>
+  <div style="overflow:hidden;" class="container">
+    <div class="two_block_L" id="mods2_img"><img src="./assets/static/mods2.png" width=600 height=600 > </div>
+    <div class="two_block_R" id="mods2_text">
+    
+      <p align="center">Mutations in the IKS channel cause Long QT Syndrome, prolonging the cardiac action potential and destablizing the heart rhythm (heart failure).</p>
+      <br>
+      <p align="center" >A mechanistic understanding of molecular systems is required for the development of drug therapies and the treatment of many diseases. </p>
+    
+    </div>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Calmodulin</h2>
+  </hgroup>
+  <div style="overflow:hidden;" class="container">
+    <div class="two_block_L img_block"><img src="./assets/static/cam_str.png" width=400 height=400 > </div>
+    <div class="two_block_R text_block"><p align="center" >Calcium signaling via calmodulin plays a vital role in many biological processes including ion channel modulation and synaptic plasticity. </p> </div>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+
+
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Calmodulin</h2>
+  </hgroup>
+  <div>
+    <img src="./assets/static/cam_studies.png" width=900 height=450 align="middle"> 
+  </div>
+  <div id="cam_studies_text">
+    <ul>
+      <li>A sequential binding model is often used to study CaM</li>
+      <li>Current estimates of binding parameters vary wildly</li>
+    </ul>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Sequential Binding Model</h2>
+  </hgroup>
+  <div>
+    <img src="./assets/static/seq_binding.png" width=900 height=450 align="middle"> 
+  </div>
+  <div id="seq_binding_text">
+    <p >Large regions of this parameter space can fit any data arbitrarily well</p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Parameter Identifiability</h2>
+  </hgroup>
+  <article>
+    <iframe src="http://spark.rstudio.com/khines/ident/"> </iframe>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Parameter Identifiability</h2>
+  </hgroup>
+  <article>
+    <iframe src="http://spark.rstudio.com/khines/ident/"> </iframe>
+  </article>
+  <div><p>Practical Identifiability</p></div>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Structural Identifiability</h2>
+  </hgroup>
+  <div>
+    <img src="./assets/static/str_ident1.png" height=325 width=975>
+  </div>
+  <div>
+    <p id="str_ident_text">Parameters cannot be inferred accurately even with infinite signal-to-noise</p>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Parameter Identifiability</h2>
+  </hgroup>
+ <div id="trans_text">
+  <p> We need a way to efficiently evalaute the full range of parameter space that leads to good agreement with the data</p>
+  <br>
+  <br>
+  <br>
+      
+  <p> We can check whether our parameter estimates are unique or strech over a vast range</p>
+ </div>
+ </slide>
+ 
+ <slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Bayesian Inference</h2>
+  </hgroup>
+ <div id="trans_text">
+  <p> The <strong>posterior distribution</strong> quantifies which regions of the parameter space provide a good explanation of the data. </p>
+  <br>
+    <p> <strong>Bayes' rule</strong> specifies how to calculate posterior probability, and <strong>Markov chain Monte Carlo</strong> provides an efficient method to estimate high-dimensional posterior distributions. </p>  
+ </div>
+  
+  <!-- Presenter Notes -->
+</slide>
+ 
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Markov chain Monte Carlo</h2>
+  </hgroup>
+ <div id="mcmc1_text">
+  <p> Estimate a probability distribution by drawing samples from it. The properties of those samples will approximate the properties of the underlying distribution (if there's a lot of em).</p>
+ </div>
+  
+  <img src="./assets/static/mcmc1.png" height=500 width=900>
+  
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Markov chain Monte Carlo</h2>
+  </hgroup>
+ <div id="mcmc1_text">
+  <p> Estimate a probability distribution by drawing samples from it. The properties of those samples will approximate the properties of the underlying distribution (if there's a lot of em).</p>
+ </div>
+  
+  <img src="./assets/static/mcmc2.png" height=500 width=900>
+  
+  <!-- Presenter Notes -->
+</slide>
+
+
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Additional Applications</h2>
+  </hgroup>
+ <div id="mcmc1_text">
+  <p> Dynamical Systems</p>
+ </div>
+  
+  <img src="./assets/static/ode1.png" height=500 width=900>
+  
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Additional Applications</h2>
+  </hgroup>
+ <div id="mcmc1_text">
+  <p> Dynamical Systems (Non-Identifiable)</p>
+ </div>
+  
+  <img src="./assets/static/ode2.png" height=500 width=900>
+  
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Additional Applications</h2>
+  </hgroup>
+ <div id="mcmc1_text">
+  <p> Hidden Markov Models</p>
+ </div>
+  
+  <img src="./assets/static/hmm.png" height=500 width=900>
+  
+  <!-- Presenter Notes -->
+</slide>
+
+
+ <slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Conclusions</h2>
+  </hgroup>
+ <div id="concl_text">
+ <ul>
+  <li> Mechanistic models of proteins systems are important</li>
+  <li> Merely fitting data to models is insufficient: fits may not be unique</li>
+  <li> New methods are required to determine the accuracy and identifiabilty of nonlinear models </li>
+  <li> Bayesian inference (& MCMC) is well suited to provide accurate parameter estimates and a direct assesment of identifiability</li>
+  <li> This approach will yield more accurate modeling and will force more innovative experimentation</li>
+ </ul>
+ </div>
+  
+  <!-- Presenter Notes -->
+</slide>
+
+
+    <slide class="backdrop"></slide>
+  </slides>
+
+  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+<!-- Grab CDN jQuery, fall back to local if offline -->
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+<script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery-1.7.min.js"><\/script>')</script>
+<!-- Load Javascripts for Widgets -->
+<!-- LOAD HIGHLIGHTER JS FILES -->
+<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+</html>
