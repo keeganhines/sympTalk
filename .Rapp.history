@@ -1,10 +1,3 @@
-x<-load('/Users/keegan/Desktop/Research/Code/Rpackages/smp/data/bleaching.RData')
-x
-load('/Users/keegan/Desktop/Research/Code/Rpackages/smp/data/bleaching.RData')
-ls
-load('/Users/keegan/Desktop/Research/Code/Rpackages/smp/data/bleaching.RData')
-ls()
-bleaching_data
 library(devtools)
 install_github('smp','khines')
 ??install
@@ -315,10 +308,17 @@ table(samples)/length(samples)
 red<-readLines("http://www.reddit.com/r/Greyhounds/hot.json")
 w<-readLines("http://en.wikipedia.org/wiki/E-64")
 w
+??publish
 setwd('/Users/keegan/Desktop/Research/Presentations/INS symp 2014/talk/')
+dir()
+setwd('/Users/keegan/Desktop/Research/Presentations/INS symp 2014/talk/Hines/')
+dir()
 library(slidify)
-author("Hines")
-slidify('index.Rmd')
-slidify('index.Rmd')
-slidify('index.Rmd')
-slidify('index.Rmd')
+publish_github('keeganhines','sympTalk')
+publish_github('keeganhines','sympTalk')
+publish_github(user='keeganhines',repo='sympTalk')
+publish_github(user='keeganhines',repo='symptalk')
+publish
+publish_deck
+publish_github
+file.exists('.git')
