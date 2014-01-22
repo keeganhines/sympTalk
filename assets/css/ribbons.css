@@ -96,6 +96,11 @@ width:400px;
   padding: 10% 0;
 }
 
+.citation{
+  font-size:12px;
+  color:"#000000"
+}
+
 #cam_studies_text{
 padding:0 0 0 50px;
 }
@@ -135,6 +140,19 @@ padding:40px 20px 20px 0;
 
 #concl_text{
   padding: 10% 5% 10% 5%;
+}
+
+#PI_header{
+  float:left;
+}
+
+#2seq_img{
+  
+  padding: 0 0 0 20%;
+}
+
+#MS_text{
+  padding: 50px 0 0 0 ;
 }
 
 strong{

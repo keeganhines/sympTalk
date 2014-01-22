@@ -73,6 +73,9 @@
   </ul>
   </div>
  </div>
+ <div>
+  <p class='citation'>Jensen et al., 2012, Mechanism of Voltage Gating in Potassium Channels, Science , 336, 6078.</p>
+ </div>
   <!-- Presenter Notes -->
 </slide>
 
@@ -99,7 +102,7 @@
     <div class="two_block_L" id="mods2_img"><img src="./assets/static/mods2.png" width=600 height=600 > </div>
     <div class="two_block_R" id="mods2_text">
     
-      <p align="center">Mutations in the IKS channel cause Long QT Syndrome, prolonging the cardiac action potential and destablizing the heart rhythm (heart failure).</p>
+      <p align="center">Mutations in the IKS channel cause Long QT Syndrome, prolonging the cardiac action potential and destablizing the heart rhythm (heart attack).</p>
       <br>
       <p align="center" >A mechanistic understanding of molecular systems is required for the development of drug therapies and the treatment of many diseases. </p>
     
@@ -144,26 +147,29 @@
     <img src="./assets/static/seq_binding.png" width=900 height=450 align="middle"> 
   </div>
   <div id="seq_binding_text">
-    <p >Large regions of this parameter space can fit any data arbitrarily well</p>
+    <p >Large regions of this parameter space can fit any data extremely well</p>
   </div>
   <!-- Presenter Notes -->
 </slide>
 
 
 <slide class="" id="slide-4" style="background:;">
-  <hgroup>
-    <h2>Parameter Identifiability</h2>
+  <hgroup >
+    <h2 id="PI_header">Parameter Identifiability</h2>
+    <img id='2seq_img' src="./assets/static/2seq.png" height=60 width=340>
   </hgroup>
   <article>
-    <iframe src="http://spark.rstudio.com/khines/ident/"> </iframe>
+    <iframe  src="http://spark.rstudio.com/khines/ident/"> </iframe>
   </article>
+  
   <!-- Presenter Notes -->
 </slide>
 
 
 <slide class="" id="" style="background:;">
   <hgroup>
-    <h2>Parameter Identifiability</h2>
+    <h2 id="PI_header" >Parameter Identifiability</h2>
+    <img id='2seq_img' src="./assets/static/2seq.png" height=60 width=340>
   </hgroup>
   <article>
     <iframe src="http://spark.rstudio.com/khines/ident/"> </iframe>
@@ -190,12 +196,12 @@
     <h2>Parameter Identifiability</h2>
   </hgroup>
  <div id="trans_text">
-  <p> We need a way to efficiently evalaute the full range of parameter space that leads to good agreement with the data</p>
+  <p> We need a way to efficiently evaluate the full range of parameter space that leads to good agreement with the data</p>
   <br>
   <br>
   <br>
       
-  <p> We can check whether our parameter estimates are unique or strech over a vast range</p>
+  <p> We can check whether our parameter estimates are unique or stretch over a vast range</p>
  </div>
  </slide>
  
@@ -211,10 +217,23 @@
   
   <!-- Presenter Notes -->
 </slide>
+
+
+<slide class="" id="" style="background:;">
+  
+ 
+  <iframe src="http://spark.rstudio.com/khines/mcmc/"> </iframe>
+  <div id="mcmc1_text">
+  <p> Estimate a probability distribution by drawing samples from it. The properties of those samples will approximate the properties of the underlying distribution (if there's a lot of em).</p>
+ </div>
+  
+  <!-- Presenter Notes -->
+</slide>
+
  
 <slide class="" id="" style="background:;">
   <hgroup>
-    <h2>Markov chain Monte Carlo</h2>
+    <h2>Markov chain Monte Carlo
   </hgroup>
  <div id="mcmc1_text">
   <p> Estimate a probability distribution by drawing samples from it. The properties of those samples will approximate the properties of the underlying distribution (if there's a lot of em).</p>
@@ -247,7 +266,33 @@
   <p> Dynamical Systems</p>
  </div>
   
-  <img src="./assets/static/ode1.png" height=500 width=900>
+  <img src="./assets/static/ode1a.png" height=500 width=900>
+  
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Additional Applications</h2>
+  </hgroup>
+ <div id="mcmc1_text">
+  <p> Dynamical Systems</p>
+ </div>
+  
+  <img src="./assets/static/ode1b.png" height=500 width=900>
+  
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Additional Applications</h2>
+  </hgroup>
+ <div id="mcmc1_text">
+  <p> Dynamical Systems</p>
+ </div>
+  
+  <img src="./assets/static/ode1c.png" height=500 width=900>
   
   <!-- Presenter Notes -->
 </slide>
@@ -265,6 +310,20 @@
   <!-- Presenter Notes -->
 </slide>
 
+
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Additional Applications</h2>
+  </hgroup>
+ <div id="mcmc1_text">
+  <p> Dynamical Systems (Non-Identifiable)</p>
+ </div>
+  
+  <img src="./assets/static/ode2b.png" height=500 width=900>
+  
+  <!-- Presenter Notes -->
+</slide>
+
 <slide class="" id="" style="background:;">
   <hgroup>
     <h2>Additional Applications</h2>
@@ -278,6 +337,22 @@
   <!-- Presenter Notes -->
 </slide>
 
+<slide class="" id="" style="background:;">
+  <hgroup>
+    <h2>Model Selection and Experimental Design</h2>
+  </hgroup>
+  <div style="overflow:hidden;" class="container">
+    <div class="two_block_L img_block"><img src="./assets/static/cam_str.png" width=400 height=400 > </div>
+    <div  class="two_block_R" id="MS_text">
+      <p align="center" > Determining non-identifiability forces the investigator to consider simpler models or to design innovative experimentation to provide data which can better constrain the parameters. </p>
+      <br>
+      <br>
+      <p align="center" >In the case of calcium binding to calmodulin, novel experiments have been developed to measure site specific binding curves (Jenni Greeson-Bernier).</p>
+    
+    </div>
+  </div>
+  <!-- Presenter Notes -->
+</slide>
 
  <slide class="" id="" style="background:;">
   <hgroup>
@@ -285,10 +360,10 @@
   </hgroup>
  <div id="concl_text">
  <ul>
-  <li> Mechanistic models of proteins systems are important</li>
-  <li> Merely fitting data to models is insufficient: fits may not be unique</li>
+  <li> Mechanistic models of proteins systems are important, though merely fitting data to models is insufficient: fits may not be unique</li>
+  <li> Non-identifiability is a concern not only for large and complex models, but also for extremely simple 2- and 3-parameter biophysical systems</li>
   <li> New methods are required to determine the accuracy and identifiabilty of nonlinear models </li>
-  <li> Bayesian inference (& MCMC) is well suited to provide accurate parameter estimates and a direct assesment of identifiability</li>
+  <li> Bayesian inference (& MCMC) is well suited to provide accurate parameter estimates and a direct assessment of identifiability</li>
   <li> This approach will yield more accurate modeling and will force more innovative experimentation</li>
  </ul>
  </div>
